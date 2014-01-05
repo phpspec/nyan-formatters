@@ -1,0 +1,33 @@
+{
+    "name": "phpspec/nyan-formatters",
+    "description": "PHPSpec Nyan Formatter Extension",
+    "type": "extension",
+    "keywords": ["phpspec", "nyan"],
+    "homepage": "https://github.com/phpspec/nyan-formatters",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "phpspec/phpspec": "2.0.*@dev",
+        "whatthejeff/nyancat-scoreboard": "~1.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "PhpSpec\\NyanFormattersExtension": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matthew Davis",
+            "email": "matt@mattdavis.co.uk"
+        },
+        {
+            "name": "Jeff Welch",
+            "email": "whatthejeff@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
