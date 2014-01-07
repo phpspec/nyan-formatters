@@ -44,8 +44,6 @@ class NyanFormatter extends DotFormatter
      */
     protected $states = null;
 
-
-
     /**
      * Actions to perform before the test suite
      *

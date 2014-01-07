@@ -33,7 +33,7 @@ class Extension implements ExtensionInterface
      */
     protected function addFormatter(ServiceContainer $container, $name, $class)
     {
-        $container->set('formatter.formatters.nyan.' . $name, function($c) use($class) {
+        $container->set('formatter.formatters.nyan.' . $name, function ($c) use ($class) {
             /** @var ServiceContainer $c */
             return new $class(
                 $c->get('formatter.presenter'),
