@@ -5,8 +5,6 @@ namespace PhpSpec\NyanFormattersExtension;
 use PhpSpec\Extension\ExtensionInterface;
 use PhpSpec\ServiceContainer;
 
-use RuntimeException;
-
 /**
  * Extension
  *
@@ -21,12 +19,6 @@ class Extension implements ExtensionInterface
      */
     public function load(ServiceContainer $container)
     {
-        if (!class_exists('NyanCat\Scoreboard')) {
-            throw new RuntimeException(
-                'Nyan formatters require whatthejeff/nyancat-scoreboard:~1.1'
-            );
-        }
-
         $this->addFormatter($container, 'cat', 'PhpSpec\NyanFormattersExtension\Formatter\NyanFormatter');
         $this->addFormatter($container, 'dino', 'PhpSpec\NyanFormattersExtension\Formatter\DinoFormatter');
         $this->addFormatter($container, 'crab', 'PhpSpec\NyanFormattersExtension\Formatter\CrabFormatter');
