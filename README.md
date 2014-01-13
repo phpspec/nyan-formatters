@@ -7,7 +7,8 @@ To install this, make sure you are using the latest release of PHPSpec, and then
 
 ```json
 "require-dev": {
-    "phpspec/nyan-formatters": "1.0.*@dev"
+    ...,
+    "phpspec/nyan-formatters": "1.*"
 }
 ```
 
