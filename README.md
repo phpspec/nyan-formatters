@@ -39,15 +39,15 @@ Then, you can add a `--format` switch to your `phpspec` command with one of the 
 
 - `nyan.cat` - Gives the standard Nyan Cat formatter
 
-![nyan cat formatter preview](https://raw.github.com/jasonlfunk/nyan-formatters/screenshots/formatters/cat.gif)
+![nyan cat formatter preview](https://raw.githubusercontent.com/jasonlfunk/nyan-formatters/master/screenshots/formatters/cat.gif)
 
 - `nyan.dino` - Gives a dinosaur formatter - Rawwr!
 
-![nyan dino formatter preview](https://raw.github.com/jasonlfunk/nyan-formatters/screenshots/formatters/dino.gif)
+![nyan dino formatter preview](https://raw.githubusercontent.com/jasonlfunk/nyan-formatters/master/screenshots/formatters/dino.gif)
 
 - `nyan.crab` - Gives a crab formatter
 
-![nyan crab formatter preview](https://raw.github.com/jasonlfunk/nyan-formatters/screenshots/formatters/crab.gif)
+![nyan crab formatter preview](https://raw.githubusercontent.com/jasonlfunk/nyan-formatters/master/screenshots/formatters/crab.gif)
 
 If you want to use one of the formatters all the time, you can enforce a default by adding a `formatter.name` option in
 the `phpspec.yml` file as follows:
