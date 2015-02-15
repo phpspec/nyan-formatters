@@ -11,8 +11,8 @@
         "whatthejeff/nyancat-scoreboard": "~1.1"
     },
     "autoload": {
-        "psr-0": {
-            "PhpSpec\\NyanFormattersExtension": "src/"
+        "psr-4": {
+            "PhpSpec\\NyanFormattersExtension\\": "src/"
         }
     },
     "authors": [
