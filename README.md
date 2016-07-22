@@ -24,7 +24,7 @@ To install this, make sure you are using the latest release of PHPSpec, and then
 ```json
 "require-dev": {
     ...,
-    "phpspec/nyan-formatters": "1.*"
+    "phpspec/nyan-formatters": "2.*"
 }
 ```
 
@@ -32,7 +32,7 @@ Install or update your dependencies, and then in a `phpspec.yml` file in the roo
 
 ```yaml
 extensions:
-    - PhpSpec\NyanFormattersExtension\Extension
+    PhpSpec\NyanFormattersExtension\Extension: ~
 ```
 
 Then, you can add a `--format` switch to your `phpspec` command with one of the following values:

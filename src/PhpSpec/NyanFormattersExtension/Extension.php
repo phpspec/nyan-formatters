@@ -2,7 +2,7 @@
 
 namespace PhpSpec\NyanFormattersExtension;
 
-use PhpSpec\Extension\ExtensionInterface;
+use PhpSpec\Extension as PhpSpecExtension;
 use PhpSpec\ServiceContainer;
 
 /**
@@ -12,12 +12,12 @@ use PhpSpec\ServiceContainer;
  *
  * @author Matthew Davis <matt@mattdavis.co.uk>
  */
-class Extension implements ExtensionInterface
+class Extension implements PhpSpecExtension
 {
     /**
      * {@inheritdoc}
      */
-    public function load(ServiceContainer $container)
+    public function load(ServiceContainer $container, array $params)
     {
         $this->addFormatter($container, 'cat', 'PhpSpec\NyanFormattersExtension\Formatter\NyanFormatter');
         $this->addFormatter($container, 'dino', 'PhpSpec\NyanFormattersExtension\Formatter\DinoFormatter');
@@ -33,7 +33,7 @@ class Extension implements ExtensionInterface
      */
     protected function addFormatter(ServiceContainer $container, $name, $class)
     {
-        $container->set('formatter.formatters.nyan.' . $name, function ($c) use ($class) {
+        $container->define('formatter.formatters.nyan.' . $name, function ($c) use ($class) {
             /** @var ServiceContainer $c */
             return new $class(
                 $c->get('formatter.presenter'),

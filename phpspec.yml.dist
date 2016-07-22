@@ -1,2 +1,2 @@
 extensions:
-    - PhpSpec\NyanFormattersExtension\Extension
+    PhpSpec\NyanFormattersExtension\Extension: ~

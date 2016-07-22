@@ -4,7 +4,7 @@ namespace PhpSpec\NyanFormattersExtension\Formatter;
 
 use PhpSpec\Event\SuiteEvent;
 use PhpSpec\Event\ExampleEvent;
-use PhpSpec\Formatter\DotFormatter;
+use PhpSpec\Formatter\ConsoleFormatter;
 
 use NyanCat\Cat;
 use NyanCat\Rainbow;
@@ -21,7 +21,7 @@ use Fab\Factory as FabFactory;
  * @author Jeff Welch <whatthejeff@gmail.com>
  * @author Matthew Davis <matt@mattdavis.co.uk>
  */
-class NyanFormatter extends DotFormatter
+class NyanFormatter extends ConsoleFormatter
 {
     /**
      * The number of examples
