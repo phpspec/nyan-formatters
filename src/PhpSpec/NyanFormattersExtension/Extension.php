@@ -22,6 +22,8 @@ class Extension implements PhpSpecExtension
         $this->addFormatter($container, 'cat', 'PhpSpec\NyanFormattersExtension\Formatter\NyanFormatter');
         $this->addFormatter($container, 'dino', 'PhpSpec\NyanFormattersExtension\Formatter\DinoFormatter');
         $this->addFormatter($container, 'crab', 'PhpSpec\NyanFormattersExtension\Formatter\CrabFormatter');
+        $this->addFormatter($container, 'rat', 'PhpSpec\NyanFormattersExtension\Formatter\RatFormatter');
+        $this->addFormatter($container, 'deadRat', 'PhpSpec\NyanFormattersExtension\Formatter\DeadRatFormatter');
     }
 
     /**
